@@ -36,7 +36,7 @@ function Home() {
                 <button onClick={handleButtonClick} className="px-5 py-5 text-xl text-white ml-5 mt-5 bg-orange-600 rounded-lg font-medium">
 
                     {/*if logged in will lead to "Restaurants page"*/}
-                    <Link to="/Restaurants">Order Now</Link>
+                    <Link to="/Restaurants">Order now</Link>
 
                 </button>
             </div>
