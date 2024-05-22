@@ -31,7 +31,7 @@ function Home() {
                     <h1 className="mr-5 mb-2"><b>Hungry?</b> Let Us</h1>
                     Bring the Food to You!
                 </div>
-                <h2 className="mr-6 mb-5 text-xl">Simplify Your Meals with <b>Chirunga Munchies</b> food delivery system</h2>
+                <h2 className="mr-6 mb-5 text-xl">Simplify Your Meals With <b>Chirunga Munchies</b> Food Delivery System</h2>
 
                 <button onClick={handleButtonClick} className="px-5 py-5 text-xl text-white ml-5 mt-5 bg-orange-600 rounded-lg font-medium">
 
