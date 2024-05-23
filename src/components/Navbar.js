@@ -1,7 +1,17 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from './images/cm-logo.svg';
 
 function Navbar() {
+    const {pathname}=useLocation();
+
+    let renderLogin=false;
+
+    if(pathname==="/Home"|| pathname==="/"){
+        renderLogin=true;
+    }
+    console.log(pathname);
+    console.log(renderLogin);
+    
     return <>
         <div>
             <div className="flex px-60 h-10 ml-6 mr-6 pt-20 pb-20 items-center justify-center font-sans font-medium text-xl">
@@ -21,6 +31,7 @@ function Navbar() {
                                 <Link to="/About">About</Link>
                             </li>
                         </ul>
+                        {renderLogin&&
                         <div className="ml-5">
 
                             <Link to="#">
@@ -33,6 +44,7 @@ function Navbar() {
                             </Link>
 
                         </div>
+                        }
                     </div>
                 </nav>
             </div>
