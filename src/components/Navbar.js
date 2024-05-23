@@ -1,16 +1,7 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from './images/cm-logo.svg';
 
 function Navbar() {
-    const {pathname}=useLocation();
-
-    let renderLogin=false;
-
-    if(pathname==="/Home"|| pathname==="/"){
-        renderLogin=true;
-    }
-    console.log(pathname);
-    console.log(renderLogin);
     
     return <>
         <div>
@@ -31,7 +22,7 @@ function Navbar() {
                                 <Link to="/About">About</Link>
                             </li>
                         </ul>
-                        {renderLogin&&
+                        
                         <div className="ml-5">
 
                             <Link to="#">
@@ -44,7 +35,7 @@ function Navbar() {
                             </Link>
 
                         </div>
-                        }
+                        
                     </div>
                 </nav>
             </div>
